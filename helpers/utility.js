@@ -60,40 +60,6 @@ exports.removeDuplicateConversationIds = function (arr) {
     return temparr;
 };
 
-//requesting network server old function
-exports.requestServer_old = function (host, port, path, requestMethod, dataArray, version) {
-    return new Promise(function (resolve) {
-        var options = {
-            host: host,
-            port: port,
-            path: path,
-            method: requestMethod,
-            headers: {
-                'x-api-version': version
-            },
-            body: {
-                uid: dataArray.uid
-            }
-        };
-        var req = http.request(options, function (resp) {
-            resp.setEncoding('utf8');
-            resp.on('data', function (result, res) {
-                if (result) {
-                    resolve(true);
-                } else {
-                    resolve(false);
-                }
-            });
-        }).on("error", function (e) {
-            resolve(false);
-        });
-        req.end();
-    })
-        .then(function (result) {
-            return result;
-        });
-};
-
 //requesting network server
 exports.requestServer = function (url, requestMethod, contentType, dataObj, apiVersion) {
     return new Promise(function (resolve) {
@@ -112,16 +78,6 @@ exports.requestServer = function (url, requestMethod, contentType, dataObj, apiV
                     resolve('FALSE');
                 } else {
                     resolve('TRUE');
-
-
-                    //if (response.statusCode == 201) {
-                    //    console.log('good');
-                    //    resolve('');
-                    //} else {
-                    //    console.log('error: ' + response.statusCode)
-                    //    console.log(body);
-                    //    resolve('');
-                    //}
                 }
             }
         )

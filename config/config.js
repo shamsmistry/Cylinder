@@ -6,15 +6,15 @@ var path = require('path');
 
 //setting Base Url
 exports.baseUrl = {
-    fileServer: 'http://localhost:3001/',
-    apiServer: 'http://localhost:3000/',
-    socketServer: 'http://localhost:1338/',
-    socketFileServer: 'http://localhost:1339/'
+    fileServer: 'XXXXXXXXXXXXX',
+    apiServer: 'XXXXXXXXXXXXX',
+    socketServer: 'XXXXXXXXXXXXX',
+    socketFileServer: 'XXXXXXXXXXXXX'
 }
 
 //setting list Port
 exports.listenPorts = {
-    port: 3001
+    port: 'XXXX'
 }
 
 //ffmpeg configurations
@@ -27,9 +27,9 @@ exports.ffmpegConfig = {
 
 //default images name
 exports.defaultImages = {
-    profile: 'default_profile.jpg',
-    cover: 'default_cover.jpg',
-    goal: 'default_goal.jpg'
+    profile: 'XXXXXXXXXXXXX',
+    cover: 'XXXXXXXXXXXXX',
+    goal: 'XXXXXXXXXXXXX'
 }
 
 //directory paths
@@ -395,8 +395,8 @@ exports.validRotationDegree = {
 
 //hash-id salt
 exports.encryption = {
-    salt: "b6a4907f78fb5fe40133ff2c77a782cd77662f00cd98536f0db6a16044867e26",
-    size: 40
+    salt: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    size: "XXX"
 };
 
 //get location from IP
@@ -413,34 +413,34 @@ exports.pagination = {
 //network settings
 exports.serverNetwork = {
     fileServer_private: {
-        ip: '10.134.14.95',
-        port: 3000,
+        ip: 'XXXXXXXXXXXXX',
+        port: 'XXXXXXXXXXXXX'
     },
     fileServer_public: {
-        ip: '104.236.157.14',
-        port: 3000,
+        ip: 'XXXXXXXXXXXXX',
+        port: 'XXXXXXXXXXXXX'
     },
     apiServer_private: {
-        ip: '10.134.13.178',
-        port: 3000,
+        ip: 'XXXXXXXXXXXXX',
+        port: 'XXXXXXXXXXXXX'
     },
     apiServer_public: {
-        ip: '104.236.155.193',
-        port: 3000,
+        ip: 'XXXXXXXXXXXXX',
+        port: 'XXXXXXXXXXXXX'
     },
     pushServer_private: {
-        ip: '10.134.13.178',
-        port: 8080
+        ip: 'XXXXXXXXXXXXX',
+        port: 'XXXXXXXXXXXXX'
     },
     pushServer_public: {
-        ip: '104.236.155.193',
-        port: 8080
+        ip: 'XXXXXXXXXXXXX',
+        port: 'XXXXXXXXXXXXX'
     }
 };
 
 
 //API Server configuration
 exports.webURL = {
-    domain: 'http://google.com/',
+    domain: 'XXXXXXXXXX',
     cdn: ''
 };

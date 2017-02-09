@@ -6,8 +6,8 @@ var mysql = require('mysql');
 var Sequelize = require('sequelize');
 
 //Create connection
-var sequelizeConnection = new Sequelize('linkagoal_db_8aug2016', 'root', '', {
-    host: 'localhost',
+var sequelizeConnection = new Sequelize('XXXXXXXXXXXXX', 'XXXXXXXXX', 'XXXXXXX', {
+    host: 'XXXXXXXXXXXX',
     dialect: 'mysql',
     define: {
         timestamps: false
